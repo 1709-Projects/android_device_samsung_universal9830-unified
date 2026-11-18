@@ -1,0 +1,6 @@
+org.lineageos.aperture.overlay.device.y2s
+android.overlay.device.y2s
+com.android.settings.overlay.device.y2s
+com.android.providers.settings.overlay.device.y2s
+com.android.systemui.overlay.device.y2s
+com.android.wifi.resources.overlay.device.y2s

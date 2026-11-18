@@ -1,0 +1,6 @@
+# Runtime device detection for the unified Exynos 9830 family
+on init
+    exec - root root -- /vendor/bin/universal9830-detect early
+
+on property:sys.boot_completed=1
+    exec - root root -- /vendor/bin/universal9830-detect late

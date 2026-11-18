@@ -1,0 +1,4 @@
+android.overlay.device.c1s
+com.android.providers.settings.overlay.device.c1s
+com.android.systemui.overlay.device.c1s
+com.android.wifi.resources.overlay.device.c1s

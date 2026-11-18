@@ -1,0 +1,18 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "wifi_brcm.rc",
+    src: "wifi_brcm.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "wifi_sec.rc",
+    src: "wifi_sec.rc",
+    sub_dir: "init",
+    vendor: true,
+}

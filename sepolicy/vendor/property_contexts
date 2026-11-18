@@ -1,0 +1,20 @@
+# Bluetooth
+vendor.bluetooth_fw_ver    u:object_r:vendor_bluetooth_prop:s0
+vendor.bluetooth_nv_ver    u:object_r:vendor_bluetooth_prop:s0
+
+# Camera
+persist.vendor.sys.camera. u:object_r:vendor_camera_prop:s0
+
+# HWC
+vendor.hwc.                u:object_r:vendor_hwc_prop:s0
+
+# NFC
+persist.vendor.nfc.nxp.    u:object_r:vendor_nfc_prop:s0
+ro.vendor.nfc.             u:object_r:vendor_nfc_prop:s0
+
+# Secure Element
+vendor.seHal.              u:object_r:vendor_sehal_prop:s0
+
+# Wifi
+vendor.wlan.               u:object_r:vendor_wlan_prop:s0
+vendor.qcom.wifi           u:object_r:vendor_wifi_prop:s0

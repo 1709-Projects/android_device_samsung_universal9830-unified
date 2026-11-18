@@ -1,0 +1,6 @@
+org.lineageos.aperture.overlay.device.r8s
+android.overlay.device.r8s
+com.android.settings.overlay.device.r8s
+com.android.providers.settings.overlay.device.r8s
+com.android.systemui.overlay.device.r8s
+com.android.wifi.resources.overlay.device.r8s

@@ -1,0 +1,5 @@
+org.lineageos.aperture.overlay.device.c2s
+android.overlay.device.c2s
+com.android.providers.settings.overlay.device.c2s
+com.android.systemui.overlay.device.c2s
+com.android.wifi.resources.overlay.device.c2s

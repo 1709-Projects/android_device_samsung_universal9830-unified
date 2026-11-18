@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "universal9830-detect.rc",
+    src: "init.universal9830.rc",
+    sub_dir: "init",
+    vendor: true,
+}

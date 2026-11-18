@@ -1,0 +1,47 @@
+#
+# Copyright (C) 2025 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# Inherit from common
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/canvas/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sec_e-pen.idc
+
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.nxp \
+    android.hardware.secure_element-service.nxp
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/canvas/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    $(DEVICE_PATH)/canvas/configs/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
+    $(DEVICE_PATH)/canvas/configs/nfc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf
+
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayCanvas
+
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.sensorhub_wait_for_mcu
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/canvas/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# Spen
+PRODUCT_PACKAGES += \
+    SPenActions \
+    vendor.samsung.hardware.spen-service
