@@ -30,6 +30,17 @@ if [ "$1" = "early" ]; then
     bind nfc/libnfc-sec-vendor.conf /vendor/etc/libnfc-sec-vendor.conf
     [ -f "$D/macloader" ] && [ -e /vendor/bin/hw/macloader ] && \
         mount -o bind "$D/macloader" /vendor/bin/hw/macloader 2>/dev/null
+
+    # Vendor blobs that differ between devices (same path, different content)
+    if [ -f "$D/vendor-bind.txt" ]; then
+        while read -r rel; do
+            [ -z "$rel" ] && continue
+            src="/vendor/universal9830/$codename/$rel"
+            [ -e "$src" ] || continue
+            [ -e "/$rel" ] || continue
+            mount -o bind "$src" "/$rel" 2>/dev/null
+        done < "$D/vendor-bind.txt"
+    fi
     exit 0
 fi
 
